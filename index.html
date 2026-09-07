@@ -1,80 +1,52 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joud Key</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-* {
-    box-sizing: border-box;
-}
+    <title>Joud Key</title>
 
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #050805;
-    font-family: Arial, sans-serif;
-    color: white;
-}
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #07100a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
 
-.box {
-    width: 90%;
-    max-width: 380px;
-    padding: 30px 22px;
-    background: #0d160f;
-    border: 2px solid #00ff66;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 0 25px rgba(0,255,100,.25);
-}
+        .box {
+            width: 330px;
+            padding: 25px;
+            text-align: center;
+            background: #0d1b11;
+            border: 2px solid #32ff64;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #123d1d;
+        }
 
-h1 {
-    margin: 0 0 10px;
-    color: #00ff66;
-    font-size: 30px;
-}
+        h1 {
+            color: #32ff64;
+        }
 
-p {
-    color: #b8c8bc;
-    font-size: 15px;
-}
+        .info {
+            color: #b9cdbd;
+            margin: 15px 0;
+        }
 
-.info {
-    margin: 20px 0;
-    padding: 12px;
-    border-radius: 10px;
-    background: #142119;
-    color: #00ff66;
-}
-
-button {
-    width: 100%;
-    padding: 14px;
-    border: 0;
-    border-radius: 10px;
-    background: #00d957;
-    color: #001b09;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#key {
-    display: none;
-    margin-top: 18px;
-    padding: 14px;
-    border-radius: 10px;
-    background: #050805;
-    border: 1px solid #00ff66;
-    color: #00ff66;
-    word-break: break-all;
-    font-size: 14px;
-}
-</style>
+        .key {
+            padding: 15px;
+            background: #07100a;
+            border-radius: 8px;
+            color: #32ff64;
+            font-weight: bold;
+            word-break: break-all;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -86,24 +58,16 @@ button {
     <p>مفتاح Joud Script</p>
 
     <div class="info">
-        صلاحية المفتاح: 23 ساعة
+        صلاحية المفتاح: دائمة
     </div>
 
-    <button onclick="getKey()">
-        الحصول على المفتاح
-    </button>
-
-    <div id="key">
+    <div class="key">
         FREE_1413cdf7704463a2b79aaaad2961185d
     </div>
 
-</div>
+    <p>هذا المفتاح لا ينتهي.</p>
 
-<script>
-function getKey() {
-    document.getElementById("key").style.display = "block";
-}
-</script>
+</div>
 
 </body>
 </html>
